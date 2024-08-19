@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(185, 183, 183);
+}
+h1{
+    color: red;
+}
+button{
+    width: 5rem;
+    height: 2rem;
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 45%;
+}
+img{
+    border-radius: 50%;
+}

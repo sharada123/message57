@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form  method="post" action="/create">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Enter Name: </td>
+                <td><input type="text" name="uname" placeholder="Sender name"/></td>
+            </tr>
+            <tr>
+                <td>Email Id : </td>
+                <td><input type="email" name="uemail" placeholder="Sender email id"/></td>
+            </tr>
+            <tr>
+                <td>Mobile number: </td>
+                <td><input type="number" name="mob" placeholder="Sender mobile number"/></td>
+            </tr>
+            <tr>
+                <td>Message: </td>
+                <td><textarea name="msg" cols="21" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Send"/></td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
